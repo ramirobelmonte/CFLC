@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+*:focus{
+  outline: none;
+  border: none;
+}
+a{
+  color: #fff;
+  outline: none;
+  border: 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: Roboto;
+  color: #fff;
+  background: url("https://images.clarin.com/2017/12/01/Hy4RzW1bf_1256x620.jpg"), #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1rem;
+}
+section{
+  position: relative;
+  overflow: hidden;
+  background: inherit;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+section::before{
+  content: "";
+  background: inherit;
+  background-attachment: fixed;
+  position: absolute;
+  z-index: -1;
+  left: -30%;
+  right: -30%;
+  top: -30%;
+  bottom: -30%;
+  box-shadow: inset 0 0 0 400px rgba(0, 0, 0, 0.3);
+  filter: blur(5px);
+}
+button{
+  padding: 2em 5em;
+  color: #fff;
+  background: none;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+span{
+  visibility: hidden;
+  width: 100%;
+  height: 20%;
+  opacity: 0.6;
+  background: radial-gradient(ellipse, white 10%, transparent 50%);
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+}
+button:hover>span{
+  visibility: visible;
+}
+footer{
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+}
