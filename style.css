@@ -87,3 +87,8 @@ footer{
   justify-content: center;
   bottom: 0;
 }
+@media screen and (max-width: 700px){
+  article{
+    padding: 1em 1em;
+  }
+}
