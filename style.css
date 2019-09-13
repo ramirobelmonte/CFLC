@@ -74,7 +74,7 @@ button:hover>span{
 footer{
   background: #1E88E5;
   width: 100%;
-  height: 5%;
+  padding: .3em 0;
   display: flex;
   align-items: center;
   justify-content: center;
