@@ -27,21 +27,19 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-attachment: initial; */
   width: 100vw;
   height: 100vh;
 }
 article{
   padding: 1em 5em;
   border-bottom: .2em solid #fff;
-  text-align: center;
 }
 section, article{
   background: rgba(0, 0, 0, 0.7);
   z-index: 99;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 button{
   padding: 2em 2em;
@@ -50,7 +48,6 @@ button{
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
-  width: 50%;
 }
 span{
   visibility: hidden;
