@@ -26,7 +26,7 @@ body{
   background: url("https://estaticos.muymascotas.es/media/cache/1140x_thumb/uploads/images/gallery/5adf3bf15bafe8c7763c986b/pinguinos-emperador-int.jpg"), #000;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0vw 0vh;
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
