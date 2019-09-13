@@ -7,10 +7,7 @@
   border: 0;
   box-sizing: border-box;
   outline: none;
-}
-*:focus{
-  outline: none;
-  border: none;
+  transition: all 50ms ease-out;
 }
 a{
   color: #fff;
@@ -45,6 +42,7 @@ aside{
   color: #212121;
   position: fixed;
   z-index: 99;
+  visibility: visible;
 }
 p{
   font-family: "Fredoka One";
@@ -74,6 +72,9 @@ img{
   80% {transform: scaleY(1.02) scaleX(0.98); }
   97%, 100% {transform: scale(1); }
 }
+
+
+/* toda la pagina */
 
 article{
   padding: 1em 5em;
@@ -126,6 +127,8 @@ footer{
   bottom: 0;
   font-style: italic;
 }
+.hidden{display: none;}
+
 @media screen and (max-width: 700px){
   article, button{
     padding: 1.5em 1em;
