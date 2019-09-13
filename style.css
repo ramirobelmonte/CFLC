@@ -23,10 +23,10 @@ body{
   font-family: Roboto;
   font-size: 1rem;
   color: #fff;
-  background: url("https://estaticos.muymascotas.es/media/cache/1140x_thumb/uploads/images/gallery/5adf3bf15bafe8c7763c986b/pinguinos-emperador-int.jpg"), #000;
+  background: url("https://uca2f889b4d1463af5c57dd101ee.previews.dropboxusercontent.com/p/thumb/AAiN3sUoP9ev4Lqa5emgS8BAFaxeInEou3P-esVJUQfC3XSGa3upds-gNC_lEDPlK3vx3EHq_gVO1QYf0GiHqQKzEooWZxh9G1hULKr2pPByfToTQCJPwsb1AhFA3_PtxQNPSIAVO6GL19FMEBEG4tbcjVdHVXRY6fU3M9YBykJN8nivJofgXy0M2crG-0F9uuBsE4Wptx_HH3hMaTHgrdojnwLaTh9YLmxbvil9RhAIDMqi_1Djae50VwnUw0kgdfFWbm0LdPvBkff2esEiUXQZ-7zkRY7TXikKhAxToYAVIuzuGehuOriAhOu5nC5afqt0g9LsN-nNMsgwUMBWZR9ktEtBBvcRrhcCAmMAVc0Liw/p.jpeg?fv_content=true&size_mode=5"), #000;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   width: 100vw;
   height: 100vh;
 }
