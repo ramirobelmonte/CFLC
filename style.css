@@ -27,7 +27,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: initial;
+  /* background-attachment: initial; */
   width: 100vw;
   height: 100vh;
 }
@@ -37,25 +37,11 @@ article{
   text-align: justify;
 }
 section, article{
-  position: relative;
-  overflow: hidden;
-  background: inherit;
+  background: rgba(0, 0, 0, 0.7);
   z-index: 99;
   width: 100%;
   display: flex;
   justify-content: space-around;
-}
-section::before, article::before{
-  content: "";
-  background: inherit;
-  position: absolute;
-  z-index: -1;
-  left: -30%;
-  right: -30%;
-  top: -30%;
-  bottom: -30%;
-  box-shadow: inset 0 0 0 400px rgba(0, 0, 0, 0.6);
-  filter: blur(5px);
 }
 button{
   padding: 2em 5em;
