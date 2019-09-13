@@ -134,4 +134,7 @@ footer{
     width: 15em;
     height: .8em;
   }
+  p{
+    padding: 0 1em;
+  }
 }
