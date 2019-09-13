@@ -21,14 +21,15 @@ body{
   justify-content: flex-end;
   align-items: center;
   font-family: Roboto;
+  font-size: 1rem;
   color: #fff;
   background: url("https://estaticos.muymascotas.es/media/cache/1140x_thumb/uploads/images/gallery/5adf3bf15bafe8c7763c986b/pinguinos-emperador-int.jpg"), #000;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
-  font-size: 1rem;
 }
 article{
   padding: 1em 5em;
@@ -47,7 +48,6 @@ section, article{
 section::before, article::before{
   content: "";
   background: inherit;
-  background-attachment: fixed;
   position: absolute;
   z-index: -1;
   left: -30%;
