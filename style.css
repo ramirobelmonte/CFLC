@@ -14,41 +14,49 @@ a{
   outline: none;
   border: 0;
 }
+
 body{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+
   font-family: Roboto;
-  font-size: 1rem;
+  font-size: 1em;
   color: #fff;
-  background: url("https://uca2f889b4d1463af5c57dd101ee.previews.dropboxusercontent.com/p/thumb/AAiN3sUoP9ev4Lqa5emgS8BAFaxeInEou3P-esVJUQfC3XSGa3upds-gNC_lEDPlK3vx3EHq_gVO1QYf0GiHqQKzEooWZxh9G1hULKr2pPByfToTQCJPwsb1AhFA3_PtxQNPSIAVO6GL19FMEBEG4tbcjVdHVXRY6fU3M9YBykJN8nivJofgXy0M2crG-0F9uuBsE4Wptx_HH3hMaTHgrdojnwLaTh9YLmxbvil9RhAIDMqi_1Djae50VwnUw0kgdfFWbm0LdPvBkff2esEiUXQZ-7zkRY7TXikKhAxToYAVIuzuGehuOriAhOu5nC5afqt0g9LsN-nNMsgwUMBWZR9ktEtBBvcRrhcCAmMAVc0Liw/p.jpeg?fv_content=true&size_mode=5"), #000;
+
+  background: url(""), #545454;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+
   width: 100vw;
   height: 100vh;
 }
 
 /* inicio */
 aside{
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #8bc34a;
-  color: #212121;
+
   position: fixed;
   z-index: 99;
   visibility: visible;
+
+  background: #8bc34a;
+  color: #212121;
+
+  width: 100%;
+  height: 100%;
 }
+/* texto del inicio */
 p{
   font-family: "Fredoka One";
   font-size: 2em;
-  padding: 0 3em;
   text-align: center;
+  padding: 0 3em;
 }
 div{
   margin-top: 2em;
@@ -58,6 +66,7 @@ div>button{width: auto; padding: 1em 3em;}
 div>button:first-child{background: #212121;}
 div>button:nth-child(2){border:.2em solid #212121;}
 
+/* imagen + animacion */
 img{
   width: 10em;
   animation-name: bubble-anim;
@@ -74,70 +83,85 @@ img{
 }
 
 
-/* toda la pagina */
-
+/* aqui comienza el juego */
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  width: 100%;
+}
 article{
   padding: 1em 5em;
-}
-section, article{
-  background: rgba(0, 0, 0, 0.9);
-  position: relative;
   border-bottom: .1em solid #fff;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  overflow: hidden;
 }
-section::after{
+
+form{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+/* linea en mitad de los botones */
+form::after{
   content: "";
   position: absolute;
+  left: 50%;
   height: 100%;
   border: .05em solid #fff;
 }
+
 button{
   padding: 2em 2em;
-  color: #fff;
   background: none;
+
   text-transform: uppercase;
+  color: #fff;
+
   position: relative;
   cursor: pointer;
   width: 50%;
 }
+
+/* detalle bajo los botones de opciones */
 span{
-  visibility: hidden;
-  width: 20em;
-  height: 1em;
-  opacity: 0.6;
   background: radial-gradient(ellipse, white 10%, transparent 50%);
+  visibility: hidden;
+  opacity: 0.6;
+
   position: absolute;
   bottom: 20%;
   left: 50%;
   transform: translate(-50%, 0);
+
+  width: 20em;
+  height: 1em;
 }
 button:hover>span{
   visibility: visible;
 }
+
+/* pie de pagina */
 footer{
-  background: #1E88E5;
-  width: 100%;
-  padding: .3em 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 0;
+
   font-style: italic;
+  background: #1E88E5;
+  bottom: 0;
+  padding: .3em 0;
+  width: 100%;
 }
+
+/* etiquetas utilitarias */
 .hidden{display: none;}
 
+/* responsive */
 @media screen and (max-width: 700px){
-  article, button{
-    padding: 1.5em 1em;
-  }
-  span{
-    width: 15em;
-    height: .8em;
-  }
-  p{
-    padding: 0 1em;
-  }
+
+  article, button{padding: 1.5em 1em;}
+  span{width: 15em;height: .8em;}
+  p{padding: 0 1em;}
+
 }
