@@ -34,22 +34,23 @@ body{
 article{
   padding: 1em 5em;
   border-bottom: .2em solid #fff;
-  text-align: justify;
+  text-align: center;
 }
 section, article{
   background: rgba(0, 0, 0, 0.7);
   z-index: 99;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 button{
-  padding: 2em 5em;
+  padding: 2em 2em;
   color: #fff;
   background: none;
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
+  width: 50%;
 }
 span{
   visibility: hidden;
