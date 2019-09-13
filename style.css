@@ -36,10 +36,17 @@ article{
 }
 section, article{
   background: rgba(0, 0, 0, 0.7);
-  z-index: 99;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
+}
+section::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  border: .1em solid #fff;
 }
 button{
   padding: 2em 2em;
