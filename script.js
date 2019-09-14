@@ -1,6 +1,10 @@
-function myFunction() {
-  x = document.querySelector("aside");
-  x.style.display = "none";
+window.onload = function(){
 
-  console.log(x);
+var aceptar = document.querySelector("button[name=aceptar]");
+
+function hidden() {
+  x = document.querySelector("aside"),
+  x.classList.add('hidden');
+}
+aceptar.onclick = hidden;
 }
