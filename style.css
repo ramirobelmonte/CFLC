@@ -44,6 +44,7 @@ aside{
   position: fixed;
   z-index: 99;
   visibility: visible;
+  top: 0;
 
   background: #48dbfb;
   color: #212121;
