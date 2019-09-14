@@ -162,9 +162,8 @@ footer{
 
 /* responsive */
 @media screen and (max-width: 700px){
-
   article, button{padding: 1.5em 1em;}
   span{width: 15em;height: .8em;}
-  p{padding: 0 1em;}
+  p{padding: 0 1em; font-size: 1.5em;}
 
 }
