@@ -1,11 +1,20 @@
 window.onload = function(){
 
-var aceptar = document.querySelector("button[name=aceptar]");
+var aceptar = document.querySelector("button[name=aceptar]"),
+    cancelar = document.querySelector("button[name=cancelar]"),
+    aside = document.querySelector("aside"),
+    texto = document.querySelector("p");
 
-function hidden() {
-  x = document.querySelector("aside"),
-  x.classList.add('hidden');
+function hide(){
+  aside.classList.add('hide');
 }
-aceptar.onclick = hidden;
+function GameOver() {
+  texto.innerHTML = "Game Over",
+  document.querySelector("div").style.display = "none",
+  aside.style.backgroundColor = "#ee5253";
+}
+
+aceptar.onclick = hide;
+cancelar.onclick = GameOver;
 
 }
