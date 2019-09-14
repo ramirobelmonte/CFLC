@@ -40,7 +40,7 @@ aside{
   align-items: center;
   justify-content: center;
 
-  position: fixed;
+  position: fixed/absolute;
   z-index: 99;
   visibility: visible;
 
