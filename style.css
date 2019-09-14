@@ -24,7 +24,8 @@ body{
   font-size: 1em;
   color: #fff;
 
-  background: url(""), #545454;
+
+  background: url('https://ucf7b589d98b0bd0612b24bd3d44.previews.dropboxusercontent.com/p/thumb/AAiijoF6RB9KTMxH8PGLQhTDtY8AW9PCm7tpyQhhB8l-SdQTTO2qCDwI9Z30sxVTdilwmCCErd4AIIGDllwqOgR71QvBTjPafThqyPkpzkgq7iCHw2w-gRvbHD42okAUl1M8ax-hlRUl4Rp0Q27UbPrC7M7z6ubcQt3dU0hzZZSLgnRfYCXXz2LqexgJXnOlBuX0HBvjA8xs4YR7L07NTKRU3daGbxsCBhU24WMnE0Cqlx_21ygGoyEEqziz-zlJ85GdTu0yHkYmYSb0rgsZ6zPvq_BjT12vzSOlmxRWhIrwUrjc8GST_y1kpqCJafwA1peRAMC21Jjtq23k_J-OhdaGZPtRZSclUUqh1A7OZ0JMwQ/p.jpeg?fv_content=true&size_mode=5'), #48dbfb;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -40,7 +41,7 @@ aside{
   align-items: center;
   justify-content: center;
 
-  position: fixed/absolute;
+  position: fixed;
   z-index: 99;
   visibility: visible;
 

@@ -7,4 +7,5 @@ function hidden() {
   x.classList.add('hidden');
 }
 aceptar.onclick = hidden;
+
 }
