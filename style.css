@@ -158,7 +158,7 @@ footer{
 }
 
 /* etiquetas utilitarias */
-.hide{transform: scaleY(0);}
+.hide{transform: translateY(-100vh);}
 
 /* responsive */
 @media screen and (max-width: 700px){
