@@ -106,14 +106,6 @@ form{
   flex-direction: row;
   position: relative;
 }
-/* linea en mitad de los botones */
-form::after{
-  content: "";
-  position: absolute;
-  left: 50%;
-  height: 100%;
-  border: .05em solid #fff;
-}
 button{
   padding: 2em 2em;
   background: none;
@@ -127,9 +119,9 @@ button{
 }
 
 /* detalle bajo los botones de opciones */
-span{
+form button:hover::before{
+  content: "";
   background: radial-gradient(ellipse, white 10%, transparent 50%);
-  visibility: hidden;
   opacity: 0.6;
 
   position: absolute;
@@ -139,9 +131,6 @@ span{
 
   width: 20em;
   height: 1em;
-}
-button:hover>span{
-  visibility: visible;
 }
 
 /* pie de pagina */
