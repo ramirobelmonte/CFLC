@@ -1,5 +1,4 @@
-window.onload = function(){
-
+// muchas variables para llamar a muchos elementos :)
 var aceptar = document.querySelector("button[name=aceptar]"),
     cancelar = document.querySelector("button[name=cancelar]"),
     aside = document.querySelector("aside"),
@@ -8,15 +7,6 @@ var aceptar = document.querySelector("button[name=aceptar]"),
     article = document.querySelector("article"),
     Opcion1 = document.querySelector("button[name=Opcion1]"),
     Opcion2 = document.querySelector("button[name=Opcion2]");
-
-function hide(){
-  aside.classList.add('hide');
-}
-function GameOver() {
-  texto.innerHTML = "Game Over",
-  document.querySelector("div").style.display = "none",
-  aside.style.backgroundColor = "#ee5253";
-}
 
 function Jota() {
   body.style.backgroundImage = "url('https://uccdb66c64c609d772b03aba0a49.previews.dropboxusercontent.com/p/thumb/AAjgccUwMqZjaF8hFPUluETjZDpoQ7DWyF9ft0MBXuRVvsUqaUQcIqff0KZGnEvzpgXbt748kMTgsrs-5fq8NH0AXqGfxdj5SwY2QZYIiK35_Jziw8tkjUaB0HLpPfYDLIZk_XUanpM_UJm0oRMK__vta7tc08tT8miKIsKQLRJVaTHxoxJBqOR2ri9me-MAVmZ_niQ_ccXTEwu3Bhj8GuSQIRN8od5QzDKYug2l28eRqlkZ4qWNfTPIy13oYyqPMIleDpyXeQ2iGIbSvmEolC5HjMfkC4il-UySCzxCgNt0i-3fSYdvzhaU67ABEhuMsZ9jTEWO7lNB6tlco8L4GTCgQn21ebCfOaHgB9_d4I0lyg/p.jpeg')";
@@ -31,10 +21,20 @@ function Seba() {
   Opcion2.textContent = "Nico quiere poner musica"
 }
 
-aceptar.addEventListener("click", hide);
-cancelar.addEventListener("click", GameOver);
+// botones del incio
+aceptar.addEventListener("click", function () {
+  aside.style.opacity = "0";
+  setTimeout(function () {
+    aside.classList.add("hide");
+  }, 600)
+});
 
+cancelar.addEventListener("click", function () {
+  texto.innerHTML = "Game Over",
+  document.querySelector("div").style.display = "none",
+  aside.style.backgroundColor = "#ee5253";
+});
+
+// sos el puto fullstack ramiro
 Opcion1.addEventListener("click", Jota);
 Opcion2.addEventListener("click", Seba);
-
-}
