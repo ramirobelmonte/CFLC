@@ -107,6 +107,9 @@ article{
   border-bottom: .1em solid #fff;
   text-align: center;
 }
+video{
+  align-self: center;
+}
 
 form{
   display: flex;
