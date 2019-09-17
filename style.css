@@ -107,6 +107,7 @@ article{
   text-align: center;
 }
 video{
+  display: none;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
