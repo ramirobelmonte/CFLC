@@ -23,7 +23,7 @@ body{
   font-family: Roboto;
   font-size: 1em;
   color: #fff;
-/* esto hay que cambiar, la forma de poner el background */
+
   background: #48dbfb;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +33,7 @@ body{
   height: 100vh;
 }
 
+/* *************************************************************************************** */
 /* inicio */
 aside{
   display: flex;
@@ -91,7 +92,18 @@ img{
   97%, 100% {transform: scale(1); }
 }
 
+/* *************************************************************************************** */
+/* video background */
+video{
+  display: none;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -99;
+  width: 100%;
+}
 
+/* *************************************************************************************** */
 /* aqui comienza el juego */
 section{
   display: flex;
@@ -105,14 +117,6 @@ article{
   padding: 1em 5em;
   border-bottom: .1em solid #fff;
   text-align: center;
-}
-video{
-  display: none;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -99;
-  width: 100%;
 }
 
 form{
@@ -147,6 +151,7 @@ form button:hover::before{
   height: 1em;
 }
 
+/* *************************************************************************************** */
 /* pie de pagina */
 footer{
   display: flex;
