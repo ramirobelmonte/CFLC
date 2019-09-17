@@ -11,12 +11,12 @@ function CambiarDiapostiva(id){
 		//ALGO TENEMOS QUE HACER ACA
 	}
 	else{
-		$('#tagTexto').html(texto);
-		$('#tagOpcion1').html(opcion1Texto);
-		$('#tagOpcion1').val(opcion1Id);
-		$('#tagOpcion2').html(opcion2Texto);
-		$('#tagOpcion2').val(opcion2Id);
+		$('#mainText').html(texto);
+		$('#btnOpcion1').html(opcion1Texto);
+		$('#btnOpcion1').val(opcion1Id);
+		$('#btnOpcion2').html(opcion2Texto);
+		$('#btnOpcion2').val(opcion2Id);
 		//La imagen esta en css ver que tocar para cambiarla
-		$('#tagSrc').attr('src',srcName);
+		$('#tagSrc').attr('src',"/assets/img/"srcName);
 	};
 }
