@@ -69,7 +69,7 @@ div{
   margin-top: .8em;
   display: flex;
 }
-div>button{width: auto; padding: 1em 3em;}
+div>button{width: auto; padding: .8em 2em;}
 div>button[name=aceptar]{background: #212121;}
 div>button[name=aceptar]:hover{background: #10ac84;}
 div>button[name=cancelar]{border:.2em solid #212121; color: #212121;}
