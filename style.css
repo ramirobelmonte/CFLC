@@ -24,7 +24,7 @@ body{
   font-size: 1em;
   color: #fff;
 /* esto hay que cambiar, la forma de poner el background */
-  background: url('https://ucd2bfb13981ed3622c7c00ffe4d.previews.dropboxusercontent.com/p/thumb/AAhFpGFuZ_N0fLZ7t2lgHYkYx2EE40TQEK0Ox_GNfy-Un5nhuiH_EfS8SGNVbkBR1HA3BKVNH1NHysZKejNNx48cjVldllJNKGZdeoE4peveHNZ2I6P0icfSAkEKQaoJAhxM5OVtaSDuMiOnL8mDkzTfmnXUjMdAXLXfImXfNBYE4i4Ms5PbNIYvXkI18P2o4taF_ubRani_ov5B8hIQuNRpRqD-Hwa3lUNxdVSFJ_1ttHgwWMdbR9iKUOlr5PJyrjTWjvnoiQIl2pQKFfr5hpw05uPuvFkFo3ceYhq6-HERa2E_Kzs6zUrufNgFvwhM2waP5bQxQrc4UJN7Z6ifOAjkI3Z_nocdgwntTqrlqJ-Erw/p.jpeg'), #48dbfb;
+  background: #48dbfb;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -107,6 +107,7 @@ article{
   text-align: center;
 }
 video{
+  display: none;
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
