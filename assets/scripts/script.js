@@ -1,6 +1,6 @@
 // muchas variables para llamar a muchos elementos :)
-var aceptar = document.querySelector("button[name=aceptar]"),
-    cancelar = document.querySelector("button[name=cancelar]"),
+var aceptar = document.querySelector("#aceptar"),
+    cancelar = document.querySelector("#cancelar"),
     aside = document.querySelector("aside"),
     texto = document.querySelector("p"),
     body = document.querySelector("body"),

@@ -1,177 +1,139 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
-*{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  outline: none;
-  text-decoration: none;
-}
-a{
-  color: #fff;
-  border: 0;
-}
-
 body{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
   font-family: Roboto;
   font-size: 1em;
   color: #fff;
-
-  background: #48dbfb;
+  background: url("assets/img/ale.jpg"),#101010;
   background-repeat: no-repeat;
-  /*background-size: cover;*/
-  background-position: top center;
+  background-size: cover;
+  background-position: center;
 
   width: 100vw;
   height: 100vh;
 }
 
-/* *************************************************************************************** */
-/* inicio */
-aside{
-  display: flex;
-  flex-direction: column;
+#start{
+  /* display: flex; */ display: none;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-
+  flex: 100%;
   position: fixed;
   z-index: 99;
   visibility: visible;
   top: 0;
-
   background: #48dbfb;
   color: #212121;
   opacity: 1;
-
   width: 100%;
   height: 100%;
-  transition: all 1s ease-out;
 }
-/* texto del inicio */
-p{
-  font-family: "Fredoka One";
-  font-size: 2em;
-  text-align: center;
-  padding: 0 3em;
-}
-span{
-  margin-top: 1em;
-  font-weight: bold;
-  text-align: center;
-}
-div{
-  margin-top: .8em;
+.first, .second{
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-div>button{width: auto; padding: .8em 2em;}
-div>button[name=aceptar]{background: #212121;}
-div>button[name=aceptar]:hover{background: #10ac84;}
-div>button[name=cancelar]{border:.2em solid #212121; color: #212121;}
-div>button[name=cancelar]:hover{background: #ee5253;}
-
+.first{
+  font-family: "Fredoka One";
+  font-size: 1.7em;
+  width: 100%;
+}
+.second{
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 1em;
+}
+.ctn{
+  margin-top: .5em;
+  width: 100%;
+  display: block;
+}
+.btn{
+  background: #212121;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  padding: .8em 0;
+}
+#cancelar{
+  background: none;
+  text-decoration: underline;
+  color: #212121;
+}
 /* imagen + animacion */
-img{
+.first img{
   width: 10em;
   animation-name: bubble-anim;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 @keyframes bubble-anim {
-  0% {transform: scale(1); }
+  0%, 97%, 100% {transform: scale(1); }
   20% {transform: scaleY(0.95) scaleX(1.05); }
   48% {transform: scaleY(1.1) scaleX(0.9); }
   68% {transform: scaleY(0.98) scaleX(1.02); }
   80% {transform: scaleY(1.02) scaleX(0.98); }
-  97%, 100% {transform: scale(1); }
 }
 
-/* *************************************************************************************** */
-/* video background */
-video{
-  display: none;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -99;
-  width: 100%;
-}
-
-/* *************************************************************************************** */
-/* aqui comienza el juego */
-section{
+.aven{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background: rgba(0, 0, 0, 0.9);
-  overflow: hidden;
-  width: 100%;
+  flex-flow: column;
+  align-items: stretch;
+  justify-content: center;
+  background: rgba(33, 33, 33, 0.9);
 }
-article{
-  padding: 1em 5em;
-  border-bottom: .1em solid #fff;
-  text-align: center;
+#mainText{
+  padding: .8em .8em;
+  text-align: justify;
 }
-
-form{
+.ctnO{
   display: flex;
   flex-direction: row;
-  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  border-top: .2em solid #fff;
 }
-button{
-  padding: 2em 2em;
-  background: none;
-
-  text-transform: uppercase;
-  color: #fff;
-
-  position: relative;
-  cursor: pointer;
+#btnOpcion1, #btnOpcion2{
   width: 50%;
+  padding: 1em .5em;
+  background: none;
+  position: relative;
 }
-
-/* detalle bajo los botones de opciones */
-form button:hover::before{
+#btnOpcion1:active::after, #btnOpcion2:active::after{
   content: "";
   background: radial-gradient(ellipse, white 10%, transparent 50%);
   opacity: 0.6;
-
   position: absolute;
-  bottom: 15%;
+  bottom: 8%;
   left: 50%;
   transform: translate(-50%, 0);
-
   width: 15em;
   height: 1em;
 }
-
-/* *************************************************************************************** */
-/* pie de pagina */
 footer{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  font-style: italic;
-  background: #1E88E5;
-  bottom: 0;
-  padding: .4em 0;
+  text-align: center;
   width: 100%;
+  padding: .3em 0;
+  background: #212121;
 }
-
-/* etiquetas utilitarias */
 .hide{display: none;}
 
-/* responsive */
-@media screen and (max-width: 700px){
-  article, button{padding: 1.5em 1em;}
-  span{width: 15em;height: .8em;}
-  p{padding: 0 1em; font-size: 1.5em;}
-
+@media screen and (min-width: 1000px) {
+  body{
+    background-size: contain;
+  }
+  #mainText{
+    padding: 1em 5em;
+  }
+  #btnOpcion1, #btnOpcion2{
+    padding: 1.5em;
+  }
 }

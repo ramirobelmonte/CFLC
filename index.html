@@ -2,6 +2,7 @@
 <!-- esto deberia funcionar -->
 <html>
   <head>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +10,30 @@
     <title>Elige tu propia aventura</title>
   </head>
   <body id="bodyImg">
-
-    <!-- ventana de inicio -->
-    <aside>
-      <img src="logo.svg">
-      <p>Bienvenida al juego<br>de tu natalicio.</p>
-      <span>Pulsá aceptar para continuar.</span>
-      <div>
-        <button type="button" name="aceptar">aceptar</button>
-        <button type="button" name="cancelar">cancelar</button>
-      </div>
+    <aside id="start">
+      <section class="first">
+        <img src="logo.svg">
+        <p>Bienvenida al juego<br>de tu natalicio.</p>
+      </section>
+      <section class="second">
+        <span>Pulsá aceptar para continuar.</span>
+        <form class="ctn">
+          <button class="btn" id="aceptar">aceptar</button>
+          <button class="btn" id="cancelar">cancelar</button>
+        </form>
+      </section>
     </aside>
 
     <!-- aventura -->
-
-    <!-- video flotando simulando background -->
-    <video autoplay loop controls>
-      <source src="assets/Ale.mp4" type="video/mp4">
-    </video>
-
-    <!-- inicio de lo puntual -->
-    <section>
+    <section class="aven">
       <article id="mainText">
-“Finalmente lo hemos logrado, luego de horas y horas de manualidades, charlas filosóficas, sol, mate y muuuucha comida. El regalo de Naty O esta terminado y empaquetado, listo para ser despachado. Pero, ahora viene el problema, quien se lleva este regalo para tomar la ciclopea tarea de lograr que llegue a destino en tiempo y forma?
-- Yo puedo pasar por el correo mañana después del trabajo.- Dijo Paula sin dudarlo, siempre tan dispuesta a inmolarse por el equipo.
-- Si queres me lo llevo yo, que tengo un correo a la vuelta de casa - Comentó tímidamente Pato”
+        “Finalmente lo hemos logrado, luego de horas y horas de manualidades, charlas filosóficas, sol, mate y muuuucha comida. El regalo de Naty O esta terminado y empaquetado, listo para ser despachado. Pero, ahora viene el problema, quién se lleva este regalo para tomar la ciclopea tarea de lograr que llegue a destino en tiempo y forma?<br>
+        -"Yo puedo pasar por el correo mañana después del trabajo."- Dijo Paula sin dudarlo, siempre tan dispuesta a inmolarse por el equipo.<br>
+        -"Si queres me lo llevo yo, que tengo un correo a la vuelta de casa" - Comentó tímidamente Pato”
       </article>
-      <form>
-        <button id="btnOpcion1" type="button" name="Opcion1" value="paula">Darselo a Paula </button>
-        <button id="btnOpcion2"type="button" name="Opcion2" value="pato">Darselo a Pato</button>
+      <form class="ctnO">
+        <button id="btnOpcion1" value="paula">Darselo a Paula que lo va a llevar al correo hoy mismo</button>
+        <button id="btnOpcion2" value="pato">Darselo a Pato</button>
       </form>
     </section>
 
@@ -50,7 +46,7 @@
   <script type="text/javascript" src="assets/scripts/CambioDeDiapo.js"></script>
   <script type="text/javascript" src="assets/scripts/script.js"></script>
   <script src="assets/scripts/jquery-3.4.1.min.js"></script>
-  
+
 
   <div id='inicio' class='diapositiva hide'>
     <div class='texto'>“Finalmente lo hemos logrado, luego de horas y horas de manualidades, charlas filosóficas, sol, mate y muuuucha comida. El regalo de Naty O esta terminado y empaquetado, listo para ser despachado. Pero, ahora viene el problema, quien se lleva este regalo para tomar la ciclopea tarea de lograr que llegue a destino en tiempo y forma?
@@ -66,7 +62,7 @@
   </div>
 
   <div id='paula' class='diapositiva hide'>
-    <div class='texto'>Luego de conducir por toda la ciudad depositando comofuncioners en la comodidad de sus refugios, llega finalmente a su casa triunfal con el regalo. 
+    <div class='texto'>Luego de conducir por toda la ciudad depositando comofuncioners en la comodidad de sus refugios, llega finalmente a su casa triunfal con el regalo.
 sin embargo algo sucede, al entrar a su casa descubrí que la misma ha Sido invadida por visitantes amistosos del vecino país de más allá del charco, lo que es es peor está involucrada en un city tour post laboral que le impedirá cumplir su encargo, pero no desespera sabe que siempre hay un comofuncioner dispuesta a socorrerla así que rápidamente envía un mensaje de texto de auxilio para organizar el plan B
 </div>
     <div class='opcion1Texto'>Envía a Jota </div>
