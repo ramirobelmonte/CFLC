@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!-- esto deberia funcionar -->
 <html>
   <head>
     <link rel="stylesheet" href="reset.css">
@@ -18,13 +17,11 @@
       <section class="second">
         <span>Pulsá aceptar para continuar.</span>
         <form class="ctn">
-          <button class="btn" id="aceptar">aceptar</button>
-          <button class="btn" id="cancelar">cancelar</button>
+          <button class="btn" id="aceptar" type="button">aceptar</button>
+          <button class="btn" id="cancelar" type="button">cancelar</button>
         </form>
       </section>
     </aside>
-
-    <!-- aventura -->
     <section class="aven">
       <article id="mainText">
         “Finalmente lo hemos logrado, luego de horas y horas de manualidades, charlas filosóficas, sol, mate y muuuucha comida. El regalo de Naty O esta terminado y empaquetado, listo para ser despachado. Pero, ahora viene el problema, quién se lleva este regalo para tomar la ciclopea tarea de lograr que llegue a destino en tiempo y forma?<br>
@@ -32,113 +29,111 @@
         -"Si queres me lo llevo yo, que tengo un correo a la vuelta de casa" - Comentó tímidamente Pato”
       </article>
       <form class="ctnO">
-        <button id="btnOpcion1" value="paula">Darselo a Paula que lo va a llevar al correo hoy mismo</button>
-        <button id="btnOpcion2" value="pato">Darselo a Pato</button>
+        <button id="btnOpcion1" type="button" value="paula">Darselo a Paula</button>
+        <button id="btnOpcion2" type="button" value="pato">Darselo a Pato</button>
       </form>
     </section>
-
-    <!-- el fin -->
     <footer>
       <a href="https://t.me/comosediscutenlascosas">All rights reserved Les Comofuncioners©</a>
     </footer>
+
+    <!-- aqui los hidden -->
+    <div id='inicio' class='diapositiva hide'>
+      <div class='texto'>
+        “Finalmente lo hemos logrado, luego de horas y horas de manualidades, charlas filosóficas, sol, mate y muuuucha comida. El regalo de Naty O esta terminado y empaquetado, listo para ser despachado. Pero, ahora viene el problema, quien se lleva este regalo para tomar la ciclopea tarea de lograr que llegue a destino en tiempo y forma?
+        - Yo puedo pasar por el correo mañana después del trabajo.- Dijo Paula sin dudarlo, siempre tan dispuesta a inmolarse por el equipo.
+        - Si queres me lo llevo yo, que tengo un correo a la vuelta de casa - Comentó tímidamente Pato”
+      </div>
+      <div class='opcion1Texto'>Darselo a Paula</div>
+      <div class="opcion1Id">paula</div>
+      <div class="opcion2Texto">Darselo a Pato</div>
+      <div class="opcion2Id">pato</div>
+      <div class="srcName">todes.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+    <div id='paula' class='diapositiva hide'>
+      <div class='texto'>
+        Luego de conducir por toda la ciudad depositando comofuncioners en la comodidad de sus refugios, llega finalmente a su casa triunfal con el regalo.
+        Sin embargo algo sucede, al entrar a su casa descubrí que la misma ha Sido invadida por visitantes amistosos del vecino país de más allá del charco, lo que es es peor está involucrada en un city tour post laboral que le impedirá cumplir su encargo, pero no desespera sabe que siempre hay un comofuncioner dispuesta a socorrerla así que rápidamente envía un mensaje de texto de auxilio para organizar el plan B
+      </div>
+      <div class='opcion1Texto'>Envía a Jota </div>
+      <div class="opcion1Id">jota</div>
+      <div class="opcion2Texto">Envía a Sebi LD </div>
+      <div class="opcion2Id">sebiLD</div>
+      <div class="srcName">pau.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+    <div id='pato' class='diapositiva hide'>
+      <div class='texto'>
+        Pato llega tranquilamente a su casa luego de la juntada y se dedica largas horas al estudio apasionante de la matemática. Por la mañana ya en su trabajo con el regalo al lado chatea alegremente con comofuncioners cuando un mensaje privado salvaje le aparece.
+        "Hola Pato, se me ocurrió que podía pegarle stickers del cefelcito cumpleañero al paquete, puedo pasar a buscarlo está tarde."
+        Simultáneamente como esas cosas que suceden por casualidad pero que están íntimamente conectadas, Valentín le envía un audio diciendo: "Voy a el correo a buscar un paquete de libros que me quedo ahí, si querés nos encontramos a tomar un café y me das el regalo de Naty para llevarlo
+      </div>
+      <div class='opcion1Texto'>Stickers Cefelcito</div>
+      <div class="opcion1Id">cony</div>
+      <div class="opcion2Texto">Café con Valen </div>
+      <div class="opcion2Id">valen</div>
+      <div class="srcName">pato.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+    <div id='jota' class='diapositiva hide'>
+      <div class='texto'>
+        Jota se monta en la bicicleta y va por el regalo como si este fuera ET transportado por el niño, mientras deambula por la bici senda recibe un llamado que podría cambiar el rumbo de su día, Pat está necesitando un jugador de urgencia para su mesa esa misma noche. Se detiene a pensar y antes de que pueda tomar una decisión una cara amiga se le acerca en sentido contrario. Se trata de Mili que viene recorriendo la bicisenda en camino a su casa.
+      </div>
+      <div class='opcion1Texto'>Acepta ir a jugar con Pat </div>
+      <div class="opcion1Id">pat</div>
+      <div class="opcion2Texto">Sigue su rumbo junto a Mili </div>
+      <div class="opcion2Id">mili</div>
+      <div class="srcName">jota2.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+    <div id='sebiLD' class='diapositiva hide'>
+      <div class='texto'>
+        Sebi LD aprovecha el Uber que le llevará a su destino para pasar por casa de Paula y tomar el regalo, ya cerraron los correos pero aún es temprano para sus planes. Está rentado de hacer una visita relámpago a Wherever y ver si se cruza con alguien, o ir directo a juntarse con sus amigos con quiénes asistirá a un recital.
+      </div>
+      <div class='opcion1Texto'>Wherever </div>
+      <div class="opcion1Id">wherever</div>
+      <div class="opcion2Texto">Recital directo</div>
+      <div class="opcion2Id">recital</div>
+      <div class="srcName">sebasLittleDog2.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+    <div id='cony' class='diapositiva hide'>
+      <div class='texto'>
+        Cony con el paquete ya en sus manos se dedica a decorarlo con sus últimas creaciones del bello Cefelcito, tiene la plancha de stickers, el preciado paquete y aborda el subte casi vacío, con justo un asiento. La suerte le sonríe y como para coronar la situación de camino a su casa se pone a hablar con les comofucioners que manijeados por el agregado quieren hacer su parte. Jota está dando vueltas cerca de la estación por dónde pronto pasará, podría bajarse y encontrarse para pegar los stickers pero también justo esta Di en CABA por unas horitas aunque tocaría desviarse un poco.
+      </div>
+      <div class='opcion1Texto'>Se cruza con Jota </div>
+      <div class="opcion1Id">jota</div>
+      <div class="opcion2Texto">Va con Di </div>
+      <div class="opcion2Id">di</div>
+      <div class="srcName">stickersCefel.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+    <div id='pat' class='diapositiva hide'>
+      <div class='texto'>
+        Luego de una hermosa jornada de Rol, Pat toma la Posta con el regalo entregado por Jota, ya es de noche y el colectivo tarda en venir, en eso está cuando ve venir una moto muy pegadita al cordón, en la parada acaba de abrir las puertas un 166 que si bien no le deja en su casa, al menos lo acerca en esa misma dirección y luego otro colectivo más adelante podría rectificar el rumbo.
+      </div>
+      <div class='opcion1Texto'>???</div>
+      <div class="opcion1Id">???</div>
+      <div class="opcion2Texto">???</div>
+      <div class="opcion2Id">???</div>
+      <div class="srcName">pat4.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+    <div id='mili' class='diapositiva hide'>
+      <div class='texto'>
+        Luego de una hermosa jornada de Rol, Pat toma la Posta con el regalo entregado por Jota, ya es de noche y el colectivo tarda en venir, en eso está cuando ve venir una moto muy pegadita al cordón, en la parada acaba de abrir las puertas un 166 que si bien no le deja en su casa, al menos lo acerca en esa misma dirección y luego otro colectivo más adelante podría rectificar el rumbo.
+      </div>
+      <div class='opcion1Texto'>???</div>
+      <div class="opcion1Id">???</div>
+      <div class="opcion2Texto">???</div>
+      <div class="opcion2Id">???</div>
+      <div class="srcName">mili3.jpg</div>
+      <div class="EsFinal">false</div>
+    </div>
+
+    <script src="assets/scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/CambioDeDiapo.js"></script>
+    <script type="text/javascript" src="assets/scripts/script.js"></script>
   </body>
-  <!-- aqui los hidden -->
-  <script type="text/javascript" src="assets/scripts/CambioDeDiapo.js"></script>
-  <script type="text/javascript" src="assets/scripts/script.js"></script>
-  <script src="assets/scripts/jquery-3.4.1.min.js"></script>
-
-
-  <div id='inicio' class='diapositiva hide'>
-    <div class='texto'>“Finalmente lo hemos logrado, luego de horas y horas de manualidades, charlas filosóficas, sol, mate y muuuucha comida. El regalo de Naty O esta terminado y empaquetado, listo para ser despachado. Pero, ahora viene el problema, quien se lleva este regalo para tomar la ciclopea tarea de lograr que llegue a destino en tiempo y forma?
-- Yo puedo pasar por el correo mañana después del trabajo.- Dijo Paula sin dudarlo, siempre tan dispuesta a inmolarse por el equipo.
-- Si queres me lo llevo yo, que tengo un correo a la vuelta de casa - Comentó tímidamente Pato”
-</div>
-    <div class='opcion1Texto'>Darselo a Paula </div>
-    <div class="opcion1Id">paula</div>
-    <div class="opcion2Texto">Darselo a Pato </div>
-    <div class="opcion2Id">pato</div>
-    <div class="srcName">todes.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
-
-  <div id='paula' class='diapositiva hide'>
-    <div class='texto'>Luego de conducir por toda la ciudad depositando comofuncioners en la comodidad de sus refugios, llega finalmente a su casa triunfal con el regalo.
-sin embargo algo sucede, al entrar a su casa descubrí que la misma ha Sido invadida por visitantes amistosos del vecino país de más allá del charco, lo que es es peor está involucrada en un city tour post laboral que le impedirá cumplir su encargo, pero no desespera sabe que siempre hay un comofuncioner dispuesta a socorrerla así que rápidamente envía un mensaje de texto de auxilio para organizar el plan B
-</div>
-    <div class='opcion1Texto'>Envía a Jota </div>
-    <div class="opcion1Id">jota</div>
-    <div class="opcion2Texto">Envía a Sebi LD </div>
-    <div class="opcion2Id">sebiLD</div>
-    <div class="srcName">pau.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
-
-
-  <div id='pato' class='diapositiva hide'>
-    <div class='texto'>Pato llega tranquilamente a su casa luego de la juntada y se dedica largas horas al estudio apasionante de la matemática. Por la mañana ya en su trabajo con el regalo al lado chatea alegremente con comofuncioners cuando un mensaje privado salvaje le aparece.
-"Hola Pato, se me ocurrió que podía pegarle stickers del cefelcito cumpleañero al paquete, puedo pasar a buscarlo está tarde."
-Simultáneamente como esas cosas que suceden por casualidad pero que están íntimamente conectadas, Valentín le envía un audio diciendo: "Voy a el correo a buscar un paquete de libros que me quedo ahí, si querés nos encontramos a tomar un café y me das el regalo de Naty para llevarlo
-</div>
-    <div class='opcion1Texto'>Stickers Cefelcito</div>
-    <div class="opcion1Id">cony</div>
-    <div class="opcion2Texto">Café con Valen </div>
-    <div class="opcion2Id">valen</div>
-    <div class="srcName">pato.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
-
-
-  <div id='jota' class='diapositiva hide'>
-    <div class='texto'>Jota se monta en la bicicleta y va por el regalo como si este fuera ET transportado por el niño, mientras deambula por la bici senda recibe un llamado que podría cambiar el rumbo de su día, Pat está necesitando un jugador de urgencia para su mesa esa misma noche. Se detiene a pensar y antes de que pueda tomar una decisión una cara amiga se le acerca en sentido contrario. Se trata de Mili que viene recorriendo la bicisenda en camino a su casa.</div>
-    <div class='opcion1Texto'>Acepta ir a jugar con Pat </div>
-    <div class="opcion1Id">pat</div>
-    <div class="opcion2Texto">Sigue su rumbo junto a Mili </div>
-    <div class="opcion2Id">mili</div>
-    <div class="srcName">jota2.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
-
-
-  <div id='sebiLD' class='diapositiva hide'>
-    <div class='texto'>Sebi LD aprovecha el Uber que le llevará a su destino para pasar por casa de Paula y tomar el regalo, ya cerraron los correos pero aún es temprano para sus planes. Está rentado de hacer una visita relámpago a Wherever y ver si se cruza con alguien, o ir directo a juntarse con sus amigos con quiénes asistirá a un recital.</div>
-    <div class='opcion1Texto'>Wherever </div>
-    <div class="opcion1Id">wherever</div>
-    <div class="opcion2Texto">Recital directo(/div>
-    <div class="opcion2Id">recital</div>
-    <div class="srcName">sebasLittleDog2.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
-
-
-  <div id='cony' class='diapositiva hide'>
-    <div class='texto'>ony con el paquete ya en sus manos se dedica a decorarlo con sus últimas creaciones del bello Cefelcito, tiene la plancha de stickers, el preciado paquete y aborda el subte casi vacío, con justo un asiento. La suerte le sonríe y como para coronar la situación de camino a su casa se pone a hablar con les comofucioners que manijeados por el agregado quieren hacer su parte. Jota está dando vueltas cerca de la estación por dónde pronto pasará, podría bajarse y encontrarse para pegar los stickers pero también justo esta Di en CABA por unas horitas aunque tocaría desviarse un poco.</div>
-    <div class='opcion1Texto'>Se cruza con Jota </div>
-    <div class="opcion1Id">jota</div>
-    <div class="opcion2Texto">Va con Di </div>
-    <div class="opcion2Id">di</div>
-    <div class="srcName">stickersCefel.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
-
-
-  <div id='pat' class='diapositiva hide'>
-    <div class='texto'>Luego de una hermosa jornada de Rol, Pat toma la Posta con el regalo entregado por Jota, ya es de noche y el colectivo tarda en venir, en eso está cuando ve venir una moto muy pegadita al cordón, en la parada acaba de abrir las puertas un 166 que si bien no le deja en su casa, al menos lo acerca en esa misma dirección y luego otro colectivo más adelante podría rectificar el rumbo.</div>
-    <div class='opcion1Texto'>???</div>
-    <div class="opcion1Id">???</div>
-    <div class="opcion2Texto">???</div>
-    <div class="opcion2Id">???</div>
-    <div class="srcName">pat4.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
-
-
-  <div id='mili' class='diapositiva hide'>
-    <div class='texto'>Luego de una hermosa jornada de Rol, Pat toma la Posta con el regalo entregado por Jota, ya es de noche y el colectivo tarda en venir, en eso está cuando ve venir una moto muy pegadita al cordón, en la parada acaba de abrir las puertas un 166 que si bien no le deja en su casa, al menos lo acerca en esa misma dirección y luego otro colectivo más adelante podría rectificar el rumbo.</div>
-    <div class='opcion1Texto'>???</div>
-    <div class="opcion1Id">???</div>
-    <div class="opcion2Texto">???</div>
-    <div class="opcion2Id">???</div>
-    <div class="srcName">mili3.jpg</div>
-    <div class="EsFinal">false</div>
-  </div>
 </html>

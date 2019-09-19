@@ -6,20 +6,19 @@ body{
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  font-family: Roboto;
+  font-family: Roboto, arial;
   font-size: 1em;
   color: #fff;
-  background: url("assets/img/ale.jpg"),#101010;
+  background: #101010;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   width: 100vw;
   height: 100vh;
 }
 
 #start{
-  /* display: flex; */ display: none;
+   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
