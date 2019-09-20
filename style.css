@@ -10,7 +10,7 @@ body{
   font-size: 1em;
   color: #fff;
   background: #222f3e;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #start{

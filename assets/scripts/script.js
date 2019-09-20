@@ -6,7 +6,6 @@ $("#cancelar").click(function(){
 	}
 );
 $(function (){
-  $('.ctnO>button').click(function(){ $("#bodyImg").css({"height":"auto"});});
 	$('#btnOpcion1').click(function(){CambiarDiapostiva($(this).val());});
 	$('#btnOpcion2').click(function(){CambiarDiapostiva($(this).val());});
 });
