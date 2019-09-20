@@ -4,14 +4,16 @@
 body{
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   font-family: Roboto, arial;
   font-size: 1em;
   color: #fff;
-  background: #101010;
+  background: #222f3e;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+  height: 100vh;
 }
 
 #start{
@@ -88,7 +90,7 @@ body{
   flex-flow: column;
   align-items: stretch;
   justify-content: center;
-  background: rgba(33, 33, 33, 0.9);
+  background: #341f97;
 }
 #mainText{
   padding: .8em .8em;
@@ -123,8 +125,7 @@ footer{
   text-align: center;
   width: 100%;
   padding: .4em 0;
-  background: #212121;
-  align-self: flex-end;
+  background: #5f27cd;
 }
 .hide{display: none;}
 

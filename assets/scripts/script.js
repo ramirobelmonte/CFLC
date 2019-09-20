@@ -6,6 +6,6 @@ $("#cancelar").click(function(){
 	}
 );
 $(function (){
-	$('#btnOpcion1').click(function(){CambiarDiapostiva($(this).val());});
-	$('#btnOpcion2').click(function(){CambiarDiapostiva($(this).val());});
+	$('#btnOpcion1').click(function(){CambiarDiapostiva($(this).val()), $("#bodyImg").css({"height":"auto"});});
+	$('#btnOpcion2').click(function(){CambiarDiapostiva($(this).val()), $("#bodyImg").css({"height":"auto"});});
 });
