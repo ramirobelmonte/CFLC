@@ -18,7 +18,7 @@ function CambiarDiapostiva(id){
 		$('#btnOpcion2').html(opcion2Texto);
 		$('#btnOpcion2').val(opcion2Id);
 		//La imagen esta en css ver que tocar para cambiarla
-		$('#bodyImg').attr('style',"background-image:url(\"assets/img/"+srcName+"\")");
+		// $('#bodyImg').attr('style',"background-image:url(\"assets/img/"+srcName+"\")");
 		$('#backImg').attr('src','\assets/img/' +srcName+ '\ ');
 	};
 }
