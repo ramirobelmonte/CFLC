@@ -18,4 +18,6 @@ time, mark, audio, video, button {
 	font: inherit;
   color: inherit;
   outline: none;
+	width: auto;
+	height: auto;
 }

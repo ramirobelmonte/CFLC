@@ -14,7 +14,6 @@ body{
   background-size: cover;
   background-position: center;
   width: 100vw;
-  height: 100vh;
 }
 
 #start{
@@ -82,6 +81,10 @@ body{
   80% {transform: scaleY(1.02) scaleX(0.98); }
 }
 
+#backImg{
+  width: 100%;
+  height: auto;
+}
 .aven{
   display: flex;
   flex-flow: column;
