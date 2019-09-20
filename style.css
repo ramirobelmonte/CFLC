@@ -4,7 +4,7 @@
 body{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   font-family: Roboto, arial;
   font-size: 1em;
@@ -79,7 +79,7 @@ body{
 }
 
 #backImg{
-  width: 100%;
+  width: 100vw;
   height: auto;
 }
 .aven{
@@ -136,5 +136,5 @@ footer{
   #btnOpcion1, #btnOpcion2{
     padding: 1.5em;
   }
-  #backImg{width: 50%;}
+  #backImg{max-width: 70vw;}
 }
