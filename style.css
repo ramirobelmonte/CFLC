@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 body{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
   font-family: Roboto, arial;
   font-size: 1.1em;
@@ -15,7 +15,7 @@ body{
 
 #start{
    display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -46,8 +46,9 @@ body{
   position: relative;
 }
 .tyc p{
-  overflow: scroll;
+  overflow-y: scroll;
   height: 100%;
+  font-family: 'lora', serif;
 }
 .tyc::after{
   content: "";
@@ -98,46 +99,40 @@ body{
   68% {transform: scaleY(0.98) scaleX(1.02); }
   80% {transform: scaleY(1.02) scaleX(0.98); }
 }
-
 #backImg{
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
 }
 .aven{
   display: flex;
   flex-flow: column;
   align-items: stretch;
   justify-content: center;
-  background: #341f97;
+  background: #fff;
+  color: #212121;
+  margin-top: -1em;
+  border-radius: 1em 1em 0 0;
 }
 #mainText{
   padding: .8em .8em;
-  text-align: justify;
 }
 .ctnO{
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  border-top: .2em solid #fff;
-  overflow: hidden;
+  padding-bottom: 1em;
 }
 #btnOpcion1, #btnOpcion2{
-  width: 50%;
-  padding: 1em .5em;
-  background: none;
-  position: relative;
+  padding: 1em;
+  margin: .2em;
+  border-radius: 1em;
+  background: #ffc107;
 }
-#btnOpcion1:active::after, #btnOpcion2:active::after{
-  content: "";
-  background: radial-gradient(ellipse, white 10%, transparent 50%);
-  opacity: 0.6;
-  position: absolute;
-  bottom: 8%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 12em;
-  height: 1em;
+#btnOpcion1:active, #btnOpcion2:active{
+  background: #4caf50;
+  color: #fff;
 }
 footer{
   text-align: center;
@@ -158,4 +153,7 @@ footer{
     padding: 1.5em;
   }
   #backImg{width: 50%;}
+  .tyc{
+    width: 50%;
+  }
 }
