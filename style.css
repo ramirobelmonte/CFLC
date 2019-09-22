@@ -39,7 +39,7 @@ body{
   background: #fff;
   color: #212121;
   padding: .8em 1em;
-  margin: .2em .9em;
+  margin: .2em 1.5em;
   border-radius: 1em;
   height: 25vh;
   overflow: hidden;
@@ -86,7 +86,7 @@ body{
 }
 /* imagen + animacion */
 .first img{
-  width: 7em;
+  width: 6em;
   animation-name: bubble-anim;
   animation-duration: 2s;
   animation-iteration-count: infinite;
