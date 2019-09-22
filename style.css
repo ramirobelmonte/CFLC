@@ -152,7 +152,7 @@ footer{
   #btnOpcion1, #btnOpcion2{
     padding: 1.5em;
   }
-  #backImg{width: 50%;}
+  #backImg{width: 50vw;height: 65vh;}
   .tyc{
     width: 50%;
   }
