@@ -7,7 +7,7 @@ body{
   justify-content: flex-end;
   align-items: center;
   font-family: Roboto, arial;
-  font-size: 1em;
+  font-size: 1.1em;
   color: #fff;
   background: #222f3e;
   min-height: 100vh;
@@ -18,7 +18,6 @@ body{
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  flex: 100%;
   position: fixed;
   z-index: 99;
   visibility: visible;
@@ -36,13 +35,34 @@ body{
   align-items: center;
   text-align: center;
 }
+.tyc{
+  background: #fff;
+  color: #212121;
+  padding: .8em 1em;
+  margin: .2em .9em;
+  border-radius: 1em;
+  height: 25vh;
+  overflow: hidden;
+  position: relative;
+}
+.tyc p{
+  overflow: scroll;
+  height: 100%;
+}
+.tyc::after{
+  content: "";
+  position: absolute;
+  background: linear-gradient(transparent, #fff);
+  width: 100%;
+  height: 15%;
+  bottom: 0;
+  left: 0;
+}
 .first{
   font-family: "Fredoka One";
   font-size: 1.7em;
-  width: 100%;
 }
 .second{
-  margin-top: 2em;
   font-weight: bold;
   font-size: 1em;
 }
@@ -57,6 +77,7 @@ body{
   color: #fff;
   width: 100%;
   padding: .8em 0;
+  border-radius: 1em;
 }
 #cancelar{
   background: none;
@@ -65,7 +86,7 @@ body{
 }
 /* imagen + animacion */
 .first img{
-  width: 10em;
+  width: 7em;
   animation-name: bubble-anim;
   animation-duration: 2s;
   animation-iteration-count: infinite;
