@@ -163,3 +163,17 @@ footer{
   #backImg{width: 80vw;height: 90vh;}
   #mainText{padding: 1em 1.5em;}
 }
+@media screen and (min-width: 900px) {
+  #backImg{width: 50vw;height: 100%; overflow: hidden;}
+  #mainText{padding: 1em 1.5em;}
+  .mainB{flex-flow: row nowrap; height: 100vh;}
+  .contenedor{
+    height: 100vh;
+    width: 50vw;
+    background: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
