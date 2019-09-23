@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
+:root{
+  --inicio: #FEC868;
+  --fondo: #8D9F5E;
+  --foot: #473C33;
+  --blanco: #ffffff;
+  --negro: #212121;
+}
+
 body{
   display: flex;
   flex-flow: row wrap;
@@ -10,16 +18,16 @@ body{
   min-height: 100vh;
   font-family: Roboto, arial;
   font-size: 1.1em;
-  color: #fff;
-  background: #222f3e;
+  color: var(--blanco);
+  background: var(--fondo);
 }
 #start{
   display: flex;
   align-items: center;
   justify-content: center;
   visibility: visible;
-  background: #48dbfb;
-  color: #212121;
+  background: var(--inicio);
+  color: var(--negro);
   opacity: 1;
   width: 100%;
   min-height: 100vh;
@@ -45,8 +53,8 @@ body{
   padding: .5em 0;
 }
 .tyc{
-  background: #fff;
-  color: #212121;
+  background: var(--blanco);
+  color: var(--negro);
   padding: .8em 1em;
   margin-bottom: 1em;
   border-radius: 1em;
@@ -72,16 +80,16 @@ body{
   width: 100%;
 }
 .btn{
-  background: #212121;
+  background: var(--negro);
   text-transform: uppercase;
-  color: #fff;
-  padding: .5em 1.3em;
+  color: var(--blanco);
+  padding: .8em 1.3em;
   border-radius: 1em;
 }
 #cancelar{
   background: none;
   text-decoration: underline;
-  color: #212121;
+  color: var(--negro);
 }
 /* imagen + animacion */
 .first img{
@@ -109,8 +117,8 @@ body{
   flex-flow: column;
   align-items: stretch;
   justify-content: center;
-  background: #fff;
-  color: #212121;
+  background: var(--blanco);
+  color: var(--negro);
   margin-top: -1em;
   border-radius: 1em 1em 0 0;
 }
@@ -133,35 +141,24 @@ body{
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+@keyframes boton {
+  0% { box-shadow: 0 0 0 .01em #00000024}
+  60% { box-shadow: 0 0 0 .5em #00000000}
+}
 button:active{
   background: #4caf50;
-  color: #fff;
+  color: var(--blanco);
 }
 footer{
   text-align: center;
   width: 100%;
   padding: .4em 0;
-  background: #5f27cd;
+  background: var(--foot);
 }
 .hide{display: none;}
 
-@keyframes boton {
-  0% { box-shadow: 0 0 0 .01em #00000024}
-  60% { box-shadow: 0 0 0 .5em #00000000}
-}
 
-@media screen and (min-width: 1000px) {
-  body{
-    background-size: contain;
-  }
-  #mainText{
-    padding: 1em 5em;
-  }
-  #btnOpcion1, #btnOpcion2{
-    padding: 1.5em;
-  }
-  #backImg{width: 50vw;height: 65vh;}
-  .tyc{
-    width: 50%;
-  }
+@media screen and (min-width: 600px) {
+  #backImg{height: 90vh;}
+  #mainText{padding: 1em 1.5em;}
 }
