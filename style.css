@@ -33,6 +33,9 @@ body{
 }
 .mainB{
   display: none;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
 }
 .first, .second{
   display: flex;
@@ -121,7 +124,7 @@ body{
   justify-content: space-evenly;
   padding-bottom: 1em;
 }
-#btnOpcion1, #btnOpcion2{
+.ctnO button{
   padding: 1em;
   margin: .2em;
   border-radius: 1em;

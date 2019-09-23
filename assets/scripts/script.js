@@ -1,6 +1,6 @@
 $("#aceptar").click(function(){
-	 $("#start").hide("slow"),
-	 $(".mainB").show();
+	 $("#start").fadeOut("slow"),
+	 $(".mainB").css({"display":"flex"});
  }
 );
 
