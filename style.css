@@ -94,6 +94,8 @@ body{
   width: 100vw;
   height: 50vh;
   object-fit: cover;
+  position: relative;
+  z-index: -99;
 }
 .aven{
   display: flex;
