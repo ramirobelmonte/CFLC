@@ -143,8 +143,8 @@ footer{
 .hide{display: none;}
 
 @keyframes boton {
-  0%,100% { box-shadow: 0 0 0 .01em #00000024}
-  60% { box-shadow: 0 0 0 .6em #00000000}
+  0% { box-shadow: 0 0 0 .01em #00000024}
+  60% { box-shadow: 0 0 0 .5em #00000000}
 }
 
 @media screen and (min-width: 1000px) {
