@@ -58,16 +58,17 @@ body{
   font-size: 1.7em;
 }
 .ctn{
-  margin-top: .5em;
+  margin: 1em 0;
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: space-around;
   width: 100%;
-  display: block;
 }
 .btn{
   background: #212121;
   text-transform: uppercase;
   color: #fff;
-  width: 100%;
-  padding: .8em 0;
+  padding: .5em 1.3em;
   border-radius: 1em;
 }
 #cancelar{
@@ -120,7 +121,7 @@ body{
   border-radius: 1em;
   background: #ffc107;
 }
-#btnOpcion1:active, #btnOpcion2:active{
+button:active{
   background: #4caf50;
   color: #fff;
 }
