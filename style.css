@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
 
 body{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   font-family: Roboto, arial;
   font-size: 1.1em;
   color: #fff;
@@ -114,7 +119,7 @@ body{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-bottom: 1em;
 }
 #btnOpcion1, #btnOpcion2{
