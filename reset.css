@@ -14,12 +14,11 @@ time, mark, audio, video, button, * {
 	padding: 0;
 	border: 0;
 	font-size: inherit;
-	font: inherit;
   color: inherit;
   outline: none;
 	width: auto;
 	height: auto;
 }
-b{
-	font-weight: bold;
+*{
+	box-sizing: border-box;
 }

@@ -20,6 +20,7 @@ body{
   font-size: 1.1em;
   color: var(--blanco);
   background: var(--fondo);
+  line-height: 1.4;
 }
 #start{
   display: flex;
@@ -39,16 +40,9 @@ body{
   justify-content: center;
   width: 90%;
 }
-.mainB{
-  display: none;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
 .first, .second{
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   padding: .5em 0;
@@ -56,16 +50,11 @@ body{
 .tyc{
   background: var(--blanco);
   color: var(--negro);
-  padding: .8em 1em;
+  padding: 1em;
   margin-bottom: 1em;
   border-radius: 1em;
   height: 50vh;
-  overflow: hidden;
-  position: relative;
-}
-.tyc p{
   overflow-y: scroll;
-  height: 100%;
   font-family: 'lora', serif;
 }
 .first{
@@ -105,6 +94,13 @@ body{
   48% {transform: scaleY(1.1) scaleX(0.9); }
   68% {transform: scaleY(0.98) scaleX(1.02); }
   80% {transform: scaleY(1.02) scaleX(0.98); }
+}
+.mainB{
+  display: none;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 #backImg{
   width: 100vw;
@@ -160,13 +156,48 @@ footer{
 
 
 @media screen and (min-width: 600px) {
-  #backImg{width: 80vw;height: 90vh;}
-  #mainText{padding: 1em 1.5em;}
+  #backImg{
+    width: 80vw;
+    height: 90vh;
+  }
+  #mainText{
+    padding: 1em 1.5em;
+  }
 }
 @media screen and (min-width: 900px) {
-  #backImg{width: 50vw;height: 100%; overflow: hidden;}
-  #mainText{padding: 1em 1.5em;}
-  .mainB{flex-flow: row nowrap; height: 100vh;}
+  #backImg{
+    width: 50vw;
+    height: 100%;
+    overflow: hidden;
+  }
+  #mainText{
+    padding: 1em 1.5em;
+  }
+  .mainA{
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .first{
+    flex-flow: column;
+    width: 50%;
+  }
+  .second{
+    width: 50%;
+    height: 100%;
+    padding: 2em;
+    overflow-y: scroll;
+    background: #fff;
+  }
+  .tyc{
+    height: auto;
+    overflow: visible;
+  }
+  .mainB{
+    flex-flow: row nowrap;
+    height: 100vh;
+  }
   .contenedor{
     height: 100vh;
     width: 50vw;
