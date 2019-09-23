@@ -160,6 +160,6 @@ footer{
 
 
 @media screen and (min-width: 600px) {
-  #backImg{height: 90vh;}
+  #backImg{width: 80%;height: 90vh;}
   #mainText{padding: 1em 1.5em;}
 }
