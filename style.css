@@ -108,7 +108,7 @@ body{
   object-fit: cover;
   position: relative;
   z-index: -99;
-  background: url('assets/img/load.gif') center no-repeat;
+  background: url('assets/img/load.gif') center no-repeat contain;
 }
 .aven{
   display: flex;
