@@ -16,7 +16,7 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: Roboto, arial;
+  font-family: "Roboto", arial;
   font-size: 1.1em;
   color: var(--blanco);
   background: var(--fondo);
@@ -111,9 +111,9 @@ body{
   background: url('assets/img/load.gif') center no-repeat;
   background-size: contain;
 }
-.aven{
+.contenedor{
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   align-items: stretch;
   justify-content: center;
   background: var(--blanco);
@@ -122,7 +122,7 @@ body{
   border-radius: 1em 1em 0 0;
 }
 #mainText{
-  padding: .8em .8em;
+  padding: 1em;
   font-family: 'lora', serif;
 }
 .ctnO{
@@ -131,6 +131,7 @@ body{
   align-items: center;
   justify-content: space-evenly;
   padding-bottom: 1em;
+  flex: 1;
 }
 .ctnO button{
   padding: 1em;
@@ -153,9 +154,14 @@ footer{
   text-align: center;
   width: 100%;
   padding: .4em 0;
+  color: var(--blanco);
   background: var(--foot);
 }
 .hide{display: none;}
+header{
+  display: none;
+  font-size: 1.3em;
+}
 
 .tercer{position: relative;}
 .tercer::before {
@@ -200,7 +206,7 @@ footer{
     overflow: hidden;
   }
   #mainText{
-    padding: 2em;
+    padding: 3em;
   }
   .mainA{
     width: 100%;
@@ -231,9 +237,10 @@ footer{
     height: 100vh;
     width: 50vw;
     background: #fff;
-    display: flex;
-    flex-flow: row wrap;
+    color: var(--negro);
     align-items: flex-end;
-    justify-content: space-between;
+    margin: 0;
+    border-radius: 0;
   }
+  header{display: block;}
 }
