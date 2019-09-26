@@ -1,4 +1,7 @@
 function CambiarDiapostiva(id){
+	if(id == 'reload'){
+		location.reload()
+	}
 	var dataDiapo =$('#' + id +'.diapositiva');
 	var texto = dataDiapo.children('.texto').html();
 	var opcion1Texto = dataDiapo.children('.opcion1Texto').html();
