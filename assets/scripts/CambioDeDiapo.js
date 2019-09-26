@@ -11,7 +11,8 @@ function CambiarDiapostiva(id){
 	var srcName = dataDiapo.children('.srcName').html();
 	var esFinal = dataDiapo.children('.EsFinal').html();
 	if(esFinal == true){
-		//ALGO TENEMOS QUE HACER ACA
+		$('#btnOpcion1').remove();
+		$('#btnOpcion2').remove();
 	}
 	else{
 		$('#mainText').html(texto);
